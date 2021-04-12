@@ -1,6 +1,18 @@
 <html>
 <body bgcolor='cyan'>
-    <p>Hola muy wenas tardes</p>
-    <p bgcolor='red'>Este es un testeo, si funciona me debe $5</p>
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for post in posts %}
+    <div>
+        <p> publicado: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
 </body>
 </html>
+
+
+
