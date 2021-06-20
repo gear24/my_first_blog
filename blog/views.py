@@ -3,9 +3,11 @@ from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
 from .models import Post
 from .forms import PostForm
-from tkinter import *
+from django.template.response import TemplateResponse
 from django.shortcuts import redirect
 from django import forms
+
+
 
 
 def post_list(request):
